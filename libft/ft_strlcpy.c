@@ -6,21 +6,11 @@
 /*   By: gapedros <gapedros@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/27 20:27:10 by gapedros          #+#    #+#             */
-/*   Updated: 2022/04/27 20:52:42 by gapedros         ###   ########.fr       */
+/*   Updated: 2022/05/10 22:33:18 by gapedros         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-
-size_t	ft_strlen(const char *str)
-{
-	size_t	cont;
-
-	cont = 0;
-	while (str[cont])
-		cont++;
-	return (cont);
-}
+#include "libft.h"
 
 size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {
@@ -39,13 +29,4 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 		dst[cont] = '\0';
 	}
 	return (ft_strlen(src));
-}
-
-int main()
-{
-	char a[20]="Proplays";
-	char b[20]="Testadsae";
-	int c = 5;
-
-	printf("Return is %zu.\n", ft_strlcpy(a, b, c));
 }

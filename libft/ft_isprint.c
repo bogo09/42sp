@@ -6,11 +6,11 @@
 /*   By: gapedros <gapedros@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/12 21:16:22 by gapedros          #+#    #+#             */
-/*   Updated: 2022/04/26 21:46:00 by gapedros         ###   ########.fr       */
+/*   Updated: 2022/05/10 22:27:02 by gapedros         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
 int	ft_isprint(int c)
 {

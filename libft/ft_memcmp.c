@@ -6,11 +6,11 @@
 /*   By: gapedros <gapedros@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/02 23:12:26 by gapedros          #+#    #+#             */
-/*   Updated: 2022/05/02 23:15:09 by gapedros         ###   ########.fr       */
+/*   Updated: 2022/05/10 22:27:12 by gapedros         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
 int	ft_memcmp(const void *s1, const void *s2, size_t len)
 {

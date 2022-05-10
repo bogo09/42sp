@@ -6,21 +6,11 @@
 /*   By: gapedros <gapedros@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/27 20:53:51 by gapedros          #+#    #+#             */
-/*   Updated: 2022/04/27 21:09:26 by gapedros         ###   ########.fr       */
+/*   Updated: 2022/05/10 22:33:14 by gapedros         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-
-size_t	ft_strlen(const char *str)
-{
-	size_t	cont;
-
-	cont = 0;
-	while (str[cont])
-		cont++;
-	return (cont);
-}
+#include "libft.h"
 
 size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
@@ -48,9 +38,4 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	if (len_dst > size)
 		return (size + len_src);
 	return (len_dst + len_src);
-}
-
-int main()
-{
-	
 }

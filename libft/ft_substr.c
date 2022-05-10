@@ -6,22 +6,11 @@
 /*   By: gapedros <gapedros@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/04 22:40:45 by gapedros          #+#    #+#             */
-/*   Updated: 2022/05/04 23:00:08 by gapedros         ###   ########.fr       */
+/*   Updated: 2022/05/10 22:33:31 by gapedros         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <stdlib.h>
-
-size_t	ft_strlen(const char *str)
-{
-	size_t	cont;
-
-	cont = 0;
-	while (str[cont])
-		cont++;
-	return (cont);
-}
+#include "libft.h"
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
@@ -32,7 +21,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	start_copy = ((size_t)start);
 	if (!s)
 		return (NULL);
-	str = malloc((len + 1) * sizeof(char)); /*huh?*/
+	str = malloc((len + 1) * sizeof(char));
 	if (!str)
 		return (NULL);
 	cont = 0;
@@ -44,8 +33,4 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	str[cont] = '\0';
 	return (str);
 }
-
-int main()
-{
-	
-}
+//what is line 34

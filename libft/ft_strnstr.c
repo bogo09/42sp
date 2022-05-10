@@ -6,11 +6,11 @@
 /*   By: gapedros <gapedros@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/27 21:25:47 by gapedros          #+#    #+#             */
-/*   Updated: 2022/04/27 21:42:23 by gapedros         ###   ########.fr       */
+/*   Updated: 2022/05/10 22:30:11 by gapedros         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
 char	*ft_strnstr(const char *s1, const char *s2, size_t len)
 {
@@ -38,9 +38,4 @@ char	*ft_strnstr(const char *s1, const char *s2, size_t len)
 		cont_s1++;
 	}
 	return (0);
-}
-
-int main()
-{
-	
 }

@@ -6,12 +6,11 @@
 /*   By: gapedros <gapedros@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/04 23:00:51 by gapedros          #+#    #+#             */
-/*   Updated: 2022/05/04 23:19:19 by gapedros         ###   ########.fr       */
+/*   Updated: 2022/05/10 22:23:06 by gapedros         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <stdlib.h>
+#include "libft.h"
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {

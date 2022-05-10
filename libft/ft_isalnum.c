@@ -6,15 +6,15 @@
 /*   By: gapedros <gapedros@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/12 21:04:51 by gapedros          #+#    #+#             */
-/*   Updated: 2022/04/26 21:40:25 by gapedros         ###   ########.fr       */
+/*   Updated: 2022/05/10 22:29:05 by gapedros         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
 int	ft_isalnum(int c)
 {
-	if (c >= 48 && c <= 57 || c >= 65 && c <= 90 || c >= 97 && 122)
+	if ((c >= 48 && c <= 57) || (c >= 65 && c <= 90) || (c >= 97 && 122))
 		return (1);
 	return (0);
 }

@@ -6,11 +6,11 @@
 /*   By: gapedros <gapedros@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/29 02:41:21 by gapedros          #+#    #+#             */
-/*   Updated: 2022/04/29 02:51:22 by gapedros         ###   ########.fr       */
+/*   Updated: 2022/05/10 22:29:24 by gapedros         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
 void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
@@ -24,9 +24,4 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	while (n--)
 		*d++ = *s++;
 	return (dst);
-}
-
-int main()
-{
-	
 }

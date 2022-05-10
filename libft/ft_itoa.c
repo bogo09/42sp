@@ -6,12 +6,11 @@
 /*   By: gapedros <gapedros@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/09 22:20:37 by gapedros          #+#    #+#             */
-/*   Updated: 2022/05/09 22:39:09 by gapedros         ###   ########.fr       */
+/*   Updated: 2022/05/10 22:27:07 by gapedros         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <stdlib.h>
+#include "libft.h"
 
 static int	is_zero(int n)
 {
@@ -56,13 +55,13 @@ char	*ft_itoa(int n)
 	num = n;
 	l = length(n);
 	if (is_zero(n))
-		len++;
+		l++;
 	if (is_negative(n))
 		num = (unsigned int)n * -1;
-	res = (char *)malloc(len + 1);
+	res = (char *)malloc(l + 1);
 	if (!res)
 		return (0);
-	res[len--] = '\0';
+	res[l--] = '\0';
 	while (l >= 0 && num > 0)
 	{
 		res[l] = (num % 10) + '0';

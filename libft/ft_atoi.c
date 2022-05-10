@@ -6,11 +6,11 @@
 /*   By: gapedros <gapedros@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/27 21:42:35 by gapedros          #+#    #+#             */
-/*   Updated: 2022/04/27 23:49:18 by gapedros         ###   ########.fr       */
+/*   Updated: 2022/05/10 22:26:37 by gapedros         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
 int	ft_atoi(const char *str)
 {
@@ -38,9 +38,4 @@ int	ft_atoi(const char *str)
 	if (sign > 0)
 		result = result * (-1);
 	return (result);
-}
-
-int main()
-{
-	
 }

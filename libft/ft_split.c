@@ -6,12 +6,11 @@
 /*   By: gapedros <gapedros@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/09 21:53:08 by gapedros          #+#    #+#             */
-/*   Updated: 2022/05/09 22:16:05 by gapedros         ###   ########.fr       */
+/*   Updated: 2022/05/10 22:22:39 by gapedros         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <stdlib.h>
+#include "libft.h"
 
 static int	letters(const char *s, char c)
 {
@@ -48,11 +47,11 @@ char	**ft_split(char const *s, char c)
 		return (NULL);
 	i = 0;
 	j = 0;
-	flag = -1;
+	cond = -1;
 	while (i <= (int)ft_strlen(s))
 	{
 		if (s[i] != c && cond < 0)
-			flag = i;
+			cond = i;
 		else if ((s[i] == c || i == (int)ft_strlen(s)) && cond >= 0)
 		{
 			s2[j++] = ft_substr(s, cond, i - cond);

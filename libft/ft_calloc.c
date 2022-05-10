@@ -6,21 +6,11 @@
 /*   By: gapedros <gapedros@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/04 22:23:21 by gapedros          #+#    #+#             */
-/*   Updated: 2022/05/04 22:36:53 by gapedros         ###   ########.fr       */
+/*   Updated: 2022/05/10 22:32:05 by gapedros         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <stdlib.h>
-
-void	ft_bzero(void *s, size_t n)
-{
-	size_t	cont;
-
-	cont = 0;
-	while (cont++ < n)
-		*(unsigned char *)(s + cont) = '\0';
-}
+#include "libft.h"
 
 void	*ft_calloc(size_t count, size_t size)
 {
@@ -31,9 +21,4 @@ void	*ft_calloc(size_t count, size_t size)
 		return (NULL);
 	ft_bzero(str, (count * size));
 	return (str);
-}
-
-int main()
-{
-	
 }
