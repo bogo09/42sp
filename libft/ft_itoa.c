@@ -6,7 +6,7 @@
 /*   By: gapedros <gapedros@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/09 22:20:37 by gapedros          #+#    #+#             */
-/*   Updated: 2022/05/10 22:27:07 by gapedros         ###   ########.fr       */
+/*   Updated: 2022/05/12 00:17:56 by gapedros         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ static int	length(int n)
 
 	l = 0;
 	num = n;
-	if (is_negative(1))
+	if (is_negative(num))
 	{
 		num = num * -1;
 		l++;

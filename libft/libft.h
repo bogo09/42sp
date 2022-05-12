@@ -6,7 +6,7 @@
 /*   By: gapedros <gapedros@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/10 21:51:20 by gapedros          #+#    #+#             */
-/*   Updated: 2022/05/10 21:59:49 by gapedros         ###   ########.fr       */
+/*   Updated: 2022/05/12 00:02:57 by gapedros         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ int		ft_toupper(int c);
 int		ft_tolower(int c);
 char	*ft_strchr(const char *str, int c);
 char	*ft_strrchr(const char *str, int c);
-int		ft_strncmp(char *str1, char *str2, int num);
+int		ft_strncmp(const char *str1, const char *str2, size_t num);
 void	*ft_memchr(const void *s, int c, size_t n);
 int		ft_memcmp(const void *s1, const void *s2, size_t len);
 char	*ft_strnstr(const char *s1, const char *s2, size_t len);
